@@ -1,0 +1,27 @@
+<div class="form-group">
+	<table width="100%">
+		<tr>
+			<td>
+				<select class="form-control" id="issues-type" description="ISSUES_TYPE_X" placeholder="Issue Type">
+					<option></option>
+					<!-- _ISSUE_TYPE_ -->
+				</select>
+			</td>
+			<td>
+				<select class="form-control" id="issues-environment" description="ISSUES_ENVIRONMENT_X">
+					<option></option>
+					<!-- _ENVIRONMENTS_ -->
+				</select>
+			</td>
+			<td>
+				<input class="form-control" id="issues-component" description="ISSUES_COMPONENT_X" placeholder="Component or Tenant">
+			</td>
+			<td>
+				<input class="form-control" id="issues-date" description="ISSUES_DATE_X" placeholder="mm/dd/yyyy" onchange="validateDate(this)" onblur="validateDate(this)">
+			</td>
+			<td>
+				<input class="form-control" id="issues-note" description="ISSUES_NOTE_X" placeholder="Note">
+			</td>
+		</tr>
+	</table>
+</div>

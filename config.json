@@ -1,0 +1,5 @@
+{
+    "environments": ["PRODUCTION", "PRE-PRODUCTION", "INTEGRATION", "QA", "DEVELOPMENT"],
+    "issue_type": ["DATABASES", "SERVICES", "NETWORK", "HARDWARE", "APPLICATION", "SECURITY", "BATCH"], 
+    "email_list": "<comma-separated-email-ids>"
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Start of Day Form</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  </head>
+  <body>
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+          <div class="page-header">
+            <h1>
+            Start of Day <small>Report Builder</small>
+            </h1>
+          </div>
+          <div class="controls">
+            <form role="form" id="startOfDayForm">
+              
+              <center>
+                <div id="environments" style="width: 100%;">
+                </div>
+              </center><br>
+
+              <div class="elastic">
+                <div class="form-group">
+                  <input class="form-control" id="headline" name="headline" placeholder="Section Heading" value="Summary" description="SUMMARY_HEADLINE_1" disabled="true">
+                  <textarea class="form-control" id="summary" placeholder="Brief Summary (Optional)" description="SUMMARY_1"></textarea>
+                </div>
+              </div>
+              
+              <!--<textarea></textarea>-->
+              <center>
+
+              <button type="button" class="btn btn-danger" aria-label="Left Align" onclick="addIssues()"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Issue</button>&nbsp;
+              <!--button type="button" class="btn btn-default" aria-label="Left Align" onclick="addTextArea()"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"> Summary</span></button>&nbsp;
+              <button type="button" class="btn btn-default" aria-label="Left Align" onclick="addTextAreaByEnv()"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"> Summary By Env</span></button-->
+              </center>
+              <br>
+              Enter your credentials (this is used to send email as you)
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Email" />
+                <input type="password" class="form-control" id="password" placeholder="password" />
+              </div>
+              <center><button type="button" class="btn btn-primary" onclick="handleSubmit()" id="submit">
+              Submit
+              </button></center>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-4">
+        </div>
+      </div>
+    </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="script/submitForm.js"></script>
+    <script src="script/loadEnvironments.js"></script>
+    <script src="script/validateForm.js"></script>
+  </body>
+</html>

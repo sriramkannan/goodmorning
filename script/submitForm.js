@@ -55,6 +55,10 @@ function addIssues() {
     });
 }
 
+function deleteIssue(issue) {
+    $(issue).remove();
+}
+
 function handleSubmit() {
     //$('#email').val("sriram.kannan@mezocliq.com");
     var formData = {};

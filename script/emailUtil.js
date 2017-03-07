@@ -64,6 +64,8 @@ function sendEmail(email, password, data, email_list) {
             return console.log(error);
         }
         console.log('Message sent: ' + info.response);
+        alert("Email Sent");
+        $('.form-control').attr('disabled', false); $('.btn').attr('disabled', false); 
     });
 }
 

